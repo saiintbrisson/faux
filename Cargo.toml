@@ -1,0 +1,6 @@
+[workspace]
+members = [
+	"faux_core",
+	"server",
+	"client"
+]

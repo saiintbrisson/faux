@@ -6,3 +6,12 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+anyhow = "1.0.41"
+bytes = "1.0.1"
+faux_core = { path = "../faux_core/" }
+futures = "0.3.15"
+log = "0.4.14"
+tokio = { version = "1.7.1", features = ["rt-multi-thread", "net", "io-util"] }
+# tokio-stream = "0.1.6"
+tokio-util = { version = "0.6.7", features = ["compat"] }
+yamux = { git = "https://github.com/libp2p/rust-yamux", branch = "develop" }
